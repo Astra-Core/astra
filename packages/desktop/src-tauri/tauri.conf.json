@@ -2,11 +2,12 @@
   "$schema": "../../../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "astra",
   "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.astra.app",
   "build": {
-    "frontendDist": "../../frontend/dist",
+    "devUrl": "http://localhost:5173",
     "beforeDevCommand": "yarn workspace frontend dev",
-    "beforeBuildCommand": "yarn workspace frontend build"
+    "beforeBuildCommand": "yarn workspace frontend build",
+    "frontendDist": "../../frontend/dist"
   },
   "app": {
     "windows": [
