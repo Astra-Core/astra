@@ -1,0 +1,57 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# will have compiled files and executables
+*/target/
+*/gen/schemas
+*/Cargo.lock
+
+
+# Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+yarn.lock
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Tauri specific
+**/target/
+packages/desktop/src-tauri/target/
+out/
+gen/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+build/
+release/
+debug/
+
+# Miscellaneous
+coverage/
+temp/
+tmp/
+packages/desktop/src-tauri/Cargo.toml
+packages/desktop/src-tauri/Cargo.lock
