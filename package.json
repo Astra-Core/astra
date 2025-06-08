@@ -1,0 +1,16 @@
+{
+  "name": "astra-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "yarn workspace desktop dev",
+    "dev:web": "yarn workspace frontend dev",
+    "build": "yarn workspace frontend build && yarn workspace desktop build",
+    "tauri": "yarn workspace desktop tauri",
+    "tauri:dev": "yarn workspace desktop dev",
+    "tauri:build": "yarn workspace desktop build"
+  }
+}
